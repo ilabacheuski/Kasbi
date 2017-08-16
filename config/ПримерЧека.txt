@@ -1,0 +1,37 @@
+[STRING1]
+AddInfo1=AddInfo1
+AddInfo2=AddInfo2
+AddInfo3=AddInfo3
+AddInfo4=AddInfo4
+AddInfo5=AddInfo5
+BarCode=1
+Department=1
+Description=Абрикосы МИКАДО ПОЛОВ.В СИ++
+Quantity=2
+Price=500
+Amount=1000
+Discount=-100
+
+[STRING2]
+AddInfo1=AddInfo1
+AddInfo2=AddInfo2
+AddInfo3=AddInfo3
+AddInfo4=AddInfo4
+AddInfo5=AddInfo5
+BarCode=1234567890123
+Department=1
+Description=Борюсики на вес (ЖИВОЙ!) 4
+Quantity=2
+Price=3000
+Amount=6000
+Discount=-100
+
+[ITOG]
+Discount=-200
+Payment0=10000
+Refund=0
+
+[FOOTER]
+СТРОКА1
+СТРОКА2
+СТРОКА3

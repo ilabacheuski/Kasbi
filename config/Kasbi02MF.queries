@@ -1,0 +1,2109 @@
+{
+  "QueriesKasbi02MF": {
+    "1": {
+      "queries": {
+        "q1": {
+          "command": 1,
+          "size": 5,
+          "name": "Чтение РПЗУ",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Адрес",
+              "parameterName": "Adress",
+              "type": "isInt",
+              "sizeInBytes": 4,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      },
+      "answers": {
+        "q1": {
+          "command": 1,
+          "size": 54,
+          "name": "Прочитаны данные РПЗУ",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код ошибки",
+              "parameterName": "ErrorCode",
+              "type": "isInt",
+              "sizeInBytes": 50,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      }
+    },
+    "12": {
+      "queries": {
+        "q12": {
+          "command": 12,
+          "size": 27,
+          "name": "Печать в чеке дополнительной информации",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Номер строки(0-2)",
+              "parameterName": "StringNumber",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Cимвольные данные",
+              "parameterName": "AddInfo",
+              "type": "isString",
+              "sizeInBytes": 26,
+              "order": "straight",
+              "isZeroSpace": true
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      },
+      "answers": {
+        "q12": {
+          "command": 12,
+          "size": 1,
+          "name": "Записана дополнительная информация",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код ошибки",
+              "parameterName": "ErrorCode",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      }
+    },
+    "16": {
+      "queries": {
+        "q16": {
+          "command": 16,
+          "size": 1,
+          "name": "Удаление покупки в чековом буфере",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Номер покупки",
+              "parameterName": "StringNumber",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      },
+      "answers": {
+        "q24": {
+          "command": 16,
+          "size": 1,
+          "name": "Ping - OK",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код ошибки",
+              "parameterName": "ErrorCode",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      }
+    },
+    "17": {
+      "queries": {
+        "q17": {
+          "command": 17,
+          "size": 0,
+          "name": "Удаление всех покупок в чековом буфере",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      },
+      "answers": {
+        "q17": {
+          "command": 17,
+          "size": 1,
+          "name": "Удалены все покупки в буфере ",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код ошибки",
+              "parameterName": "ErrorCode",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      }
+    },
+    "18": {
+      "queries": {
+        "q18": {
+          "command": 18,
+          "size": 5,
+          "name": "Закрытие чека",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Тип операции",
+              "parameterName": "OperationType",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Сумма платежа",
+              "parameterName": "Amount",
+              "type": "isFloat",
+              "sizeInBytes": 4,
+              "order": "reverse",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      },
+      "answers": {
+        "q18-27": {
+          "command": 18,
+          "size": 27,
+          "name": "Чек закрыт успешно",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Число покупок",
+              "parameterName": "QuantityOfBuy",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Номер чека",
+              "parameterName": "CheckNumber",
+              "type": "isInt",
+              "sizeInBytes": 2,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Номер смены",
+              "parameterName": "ShiftNumber",
+              "type": "isInt",
+              "sizeInBytes": 2,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Дата",
+              "parameterName": "Date",
+              "type": "isDate",
+              "sizeInBytes": 3,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Время",
+              "parameterName": "Time",
+              "type": "isTime",
+              "sizeInBytes": 2,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Кассир",
+              "parameterName": "Cashier",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Тип операции нал/безнал/возврат/возврат безнал(0/1/2/6)",
+              "parameterName": "OperationType",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Старший байт выплаты",
+              "parameterName": "HighByteOfPayment",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Сумма по чеку",
+              "parameterName": "AmountCheck",
+              "type": "isInt",
+              "sizeInBytes": 4,
+              "order": "reverse",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Признак резервного режима",
+              "parameterName": "ReserveMode",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Сумма от клиента",
+              "parameterName": "AmountClient",
+              "type": "isInt",
+              "sizeInBytes": 4,
+              "order": "reverse",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Количество сторно",
+              "parameterName": "QuantityStorno",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Сумма сторно",
+              "parameterName": "AmountStorno",
+              "type": "isInt",
+              "sizeInBytes": 4,
+              "order": "reverse",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        },
+        "q18-1": {
+          "command": 18,
+          "size": 1,
+          "name": "Ошибка закрытия чека!",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код ошибки",
+              "parameterName": "ErrorCode",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      }
+    },
+    "19": {
+      "queries": {
+        "q19": {
+          "command": 19,
+          "size": 1,
+          "name": "Имитация нажатия клавиш",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Скан-код клавиши",
+              "parameterName": "ScanCode",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      },
+      "answers": {
+        "q19": {
+          "command": 19,
+          "size": 1,
+          "name": "Успешная имитация нажатия клавиши",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код ошибки",
+              "parameterName": "ErrorCode",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      }
+    },
+    "20": {
+      "queries": {
+        "q20": {
+          "command": 20,
+          "size": 17,
+          "name": "Вывод на индикатор ККМ информационной строки",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Номер LCD индикатора",
+              "parameterName": "IndicatorNumber",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Символьные данные",
+              "parameterName": "StringData",
+              "type": "isString",
+              "sizeInBytes": 16,
+              "order": "straight",
+              "isZeroSpace": true
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      },
+      "answers": {
+        "q20": {
+          "command": 20,
+          "size": 1,
+          "name": "Вывод на LCD дисплей завершен",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код ошибки",
+              "parameterName": "ErrorCode",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      }
+    },
+    "21": {
+      "queries": {
+        "q21": {
+          "command": 21,
+          "size": 0,
+          "name": "Получение информации о состоянии и режиме ККМ",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      },
+      "answers": {
+        "q21": {
+          "command": 21,
+          "size": 2,
+          "name": "Получена информация о состоянии и режиме ККМ",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Текущий режим ККМ",
+              "parameterName": "Mode",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Текущий статус ККМ",
+              "parameterName": "Status",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      }
+    },
+    "23": {
+      "queries": {
+        "q23": {
+          "command": 23,
+          "size": 27,
+          "name": "Дополнительная информация о товаре",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Номер покупки",
+              "parameterName": "StringNumber",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Дополнительная информация о товаре",
+              "parameterName": "AddDescription",
+              "type": "isString",
+              "sizeInBytes": 26,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      },
+      "answers": {
+        "q23": {
+          "command": 23,
+          "size": 1,
+          "name": "Успешно записана дополнительная информация о товаре",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код ошибки",
+              "parameterName": "ErrorCode",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      }
+    },
+    "24": {
+      "queries": {
+        "q24": {
+          "command": 24,
+          "size": 0,
+          "name": "Ping. Проверка ККМ",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      },
+      "answers": {
+        "q24": {
+          "command": 24,
+          "size": 1,
+          "name": "Ping - OK",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код ошибки",
+              "parameterName": "ErrorCode",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      }
+    },
+    "25": {
+      "queries": {
+        "q25": {
+          "command": 25,
+          "size": 0,
+          "name": "Получение полной информации о итогах за смену",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      },
+      "answers": {
+        "q25": {
+          "command": 25,
+          "size": 161,
+          "name": "Получена информация о итогах за смену",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Данные",
+              "parameterName": "Data",
+              "type": "isInt",
+              "sizeInBytes": 161,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      }
+    },
+    "27": {
+      "queries": {
+        "q27": {
+          "command": 27,
+          "size": 0,
+          "name": "Получение заводского номера ККМ",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      },
+      "answers": {
+        "q27": {
+          "command": 27,
+          "size": 13,
+          "name": "Получен заводской номер ККМ",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Заводской номер",
+              "parameterName": "SerialKKM",
+              "type": "isInt",
+              "sizeInBytes": 13,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      }
+    },
+    "29": {
+      "queries": {
+        "q29": {
+          "command": 29,
+          "size": 0,
+          "name": "Получение информации о текущем итоге продаж за смену",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      },
+      "answers": {
+        "q29-12": {
+          "command": 29,
+          "size": 12,
+          "name": "Успешное получение информации о текущем итоге продаж за смену",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Номер смены",
+              "parameterName": "ShiftNumber",
+              "type": "isInt",
+              "sizeInBytes": 2,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Дата",
+              "parameterName": "Date",
+              "type": "isDate",
+              "sizeInBytes": 3,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Время",
+              "parameterName": "Time",
+              "type": "isTime",
+              "sizeInBytes": 2,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Итог за смену",
+              "parameterName": "ShiftAmount",
+              "type": "isInt",
+              "sizeInBytes": 5,
+              "order": "reverse",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        },
+        "q29-1": {
+          "command": 29,
+          "size": 1,
+          "name": "Ошибка получения текущих итогов продаж за смену",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код ошибки",
+              "parameterName": "ErrorCode",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      }
+    },
+    "45": {
+      "queries": {
+        "q45": {
+          "command": 45,
+          "size": 1,
+          "name": "Печать X-отчетов",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Данные сменный/по кассирам/по отделам/ часовой(0/1/2/3)",
+              "parameterName": "Data",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      },
+      "answers": {
+        "q11": {
+          "command": 11,
+          "size": 1,
+          "name": "Печать Х-отчета завершена",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код ошибки",
+              "parameterName": "ErrorCode",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      }
+    },
+    "46": {
+      "queries": {
+        "q46": {
+          "command": 46,
+          "size": 0,
+          "name": "Печать кассовой ленты",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      },
+      "answers": {
+        "q46": {
+          "command": 46,
+          "size": 1,
+          "name": "Печать кассовой ленты завершена",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код ошибки",
+              "parameterName": "ErrorCode",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      }
+    },
+    "47": {
+      "queries": {
+        "q47": {
+          "command": 47,
+          "size": 0,
+          "name": "Печать Z-отчета",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      },
+      "answers": {
+        "q47": {
+          "command": 47,
+          "size": 1,
+          "name": "Печать Z-отчета завершена",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код ошибки",
+              "parameterName": "ErrorCode",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      }
+    },
+    "50": {
+      "queries": {
+        "q50-84": {
+          "command": 50,
+          "size": 84,
+          "name": "Заполнение буфера покупки с расширеным названием. Название - 52 байта.",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Тип операции",
+              "parameterName": "OperationType",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Отдел кассы",
+              "parameterName": "Department",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Количество",
+              "parameterName": "Quantity",
+              "type": "is1000Int",
+              "sizeInBytes": 4,
+              "order": "reverse",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Цена",
+              "parameterName": "Price",
+              "type": "isFloat",
+              "sizeInBytes": 4,
+              "order": "reverse",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Процент скидки/наценки",
+              "parameterName": "Discount",
+              "type": "isInt",
+              "sizeInBytes": 2,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Признак нет/скидки/наценки(0/1/2)",
+              "parameterName": "DiscountMode",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Результат (сумма)",
+              "parameterName": "Amount",
+              "type": "isFloat",
+              "sizeInBytes": 4,
+              "order": "reverse",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Признак резервного режима",
+              "parameterName": "ReserveMode",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Штрихкод строкой windows-1251",
+              "parameterName": "BarCode",
+              "type": "isString",
+              "sizeInBytes": 13,
+              "order": "straight",
+              "isZeroSpace": true
+            },
+            {
+              "name": "Номер покупки",
+              "parameterName": "StringNumber",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Название",
+              "parameterName": "Description",
+              "type": "isString",
+              "sizeInBytes": 52,
+              "order": "straight",
+              "isZeroSpace": true
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        },
+        "q50-58": {
+          "command": 50,
+          "size": 58,
+          "name": "Заполнение буфера покупки с расширеным названием. Название - 26 байт.",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Тип операции",
+              "parameterName": "OperationType",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Отдел кассы",
+              "parameterName": "Department",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Количество",
+              "parameterName": "Quantity",
+              "type": "is1000Int",
+              "sizeInBytes": 4,
+              "order": "reverse",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Цена",
+              "parameterName": "Price",
+              "type": "isFloat",
+              "sizeInBytes": 4,
+              "order": "reverse",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Процент скидки/наценки",
+              "parameterName": "Discount",
+              "type": "isInt",
+              "sizeInBytes": 2,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Признак нет/скидки/наценки(0/1/2)",
+              "parameterName": "DiscountMode",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Результат (сумма)",
+              "parameterName": "Amount",
+              "type": "isFloat",
+              "sizeInBytes": 4,
+              "order": "reverse",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Признак резервного режима",
+              "parameterName": "ReserveMode",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Штрихкод строкой windows-1251",
+              "parameterName": "BarCode",
+              "type": "isString",
+              "sizeInBytes": 13,
+              "order": "straight",
+              "isZeroSpace": true
+            },
+            {
+              "name": "Номер покупки",
+              "parameterName": "StringNumber",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Название",
+              "parameterName": "Description",
+              "type": "isString",
+              "sizeInBytes": 26,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      },
+      "answers": {
+        "q15": {
+          "command": 15,
+          "size": 1,
+          "name": "Ping - OK",
+          "bytesDef": [
+            {
+              "name": "Номер ККМ (BCD)",
+              "parameterName": "NumberOfKKM",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Размер сообщения",
+              "parameterName": "Size",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код команды",
+              "parameterName": "Command",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Код ошибки",
+              "parameterName": "ErrorCode",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            },
+            {
+              "name": "Контрольная сумма",
+              "parameterName": "crc",
+              "type": "isInt",
+              "sizeInBytes": 1,
+              "order": "straight",
+              "isZeroSpace": false
+            }
+          ]
+        }
+      }
+    }
+  }
+}

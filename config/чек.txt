@@ -1,0 +1,28 @@
+[STRING1]
+Description=РОСТОМЕР РМ-02-04 РФ
+Quantity=1
+Price=1.94
+Amount=1.94
+BarCode=
+Department=1
+[STRING2]
+Description=БУМАГА МИЛЛИМЕТРОВАЯ лист А4 с1266 (250) КраснаяЗвезда РБ
+Quantity=3
+Price=0.04
+Amount=0.12
+BarCode=
+Department=1
+[STRING3]
+Description=ЭЛ ПИТ 1,5V АЛКАЛАЙН LR03 ААА 4шт в пленке Maxell Венгрия
+Quantity=1
+Price=2.8
+Amount=2.8
+BarCode=
+Department=1
+[ITOG]
+Department=1
+Payment1=5.33
+Change=0.47
+[FOOTER]
+Footer1=ОДО Графо
+Footer2=благодарит Вас за покупку!
